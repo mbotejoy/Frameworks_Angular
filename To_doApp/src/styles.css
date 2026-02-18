@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../static/styles.css/index.css';
+@import '../static/styles.css/signup.css';
+@import '../static/styles.css/create.css';
+@import '../static/styles.css/list.css';
+@import '../static/styles.css/previous.css';
+@import '../static/styles.css/login.css';
+
