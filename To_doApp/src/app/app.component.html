@@ -4,8 +4,8 @@
   <h1 class="logo-cursive">TO-DO List</h1>
   <div class="nav-auth-buttons">
     <span id="userWelcome"></span>
-    <a href="login.html"><button id="loginBtn">Login</button></a>
-    <a href="signup.html"><button id="signupBtn">Sign Up</button></a>
+    <a routerLink="/login"><button id="loginBtn">Login</button></a>
+    <a routerLink="/signup"><button id="signupBtn">Sign Up</button></a>
     <button id="logoutBtn">Logout</button>
   </div>
 </nav>
@@ -14,7 +14,7 @@
 
 <!-- LANDING SECTION -->
 <section class="landing">
-  <a href="create.html">
+  <a routerLink="/create">
    <button class="card-btn" id="createPageBtn">Create New List
   </button>
   </a>
@@ -38,9 +38,11 @@
     </div>
   </div>
 
-  <button class="card-btn" id="previousPageBtn">
-    View Lists
-  </button>
+  <a routerLink="/previous">
+    <button class="card-btn" id="previousPageBtn">
+      View Lists
+    </button>
+  </a>
 </section>
 
 <!-- LIST SECTION -->
@@ -55,6 +57,8 @@
     Delete Entire List
   </button>
 </section>
+
+<router-outlet></router-outlet>
 
 <footer>
 <p>&copy; 2026 TO-DO List App. All rights reserved.</p>
